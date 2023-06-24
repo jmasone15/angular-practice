@@ -1,1 +1,8 @@
 - Angular is a framework for building reactive single-page web applications.
+- To run a development server, run 'ng serve'
+- Angular allows you to write dynamic HTML code using "components"
+- Components always have html, css, and typescript files.
+- Components all have a "selector" property which translates to an HTML selector
+- By exporting values from the component's ts file, you can dynamically display them in the HTML using double curly brackets
+    - Also known as "data-binding"
+- Each component can utilize Angular modules, but they have to be declared to be used.
