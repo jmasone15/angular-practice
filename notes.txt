@@ -6,3 +6,16 @@
 - By exporting values from the component's ts file, you can dynamically display them in the HTML using double curly brackets
     - Also known as "data-binding"
 - Each component can utilize Angular modules, but they have to be declared to be used.
+- In your angular.json file, you can make a majority of your configurations there.
+- Configurations like the global style sheet, under the "styles" property.
+- The only file served to the browser is the index.html file after compiling is complete.
+- In the HTML file, angular knows to render the app component based on the selector defined in app.component.ts
+- The @Component definition has a selector property with the value of "app-root"
+- When the server function is run, the bundled JavaScript coded is appended to the index.html.
+- The main.ts file actually kicks off the angular compiling and is passed the AppModule from the app.module.ts file.
+- In the module, we tell Angular to bootstrap the AppComponent and parses it into the HTML.
+- In the end, Angular is a JavaScript framework that changes the DOM at runtime.
+- Overall, Angular is component based. You build your application by using multiple components.
+- Each component has it's own HTML, CSS, and JS/TS code. As well as it's own business logic.
+- All other components besides the root component will be added to the HTML of the root component.
+- Generally all of your components will have their own folder with the name of the component.
