@@ -44,3 +44,4 @@
 - To setup event binding, you can add a property to the HTML element you want to bind to. This property should be a common HTML event.
 - The name of the event will be contained with () and set equal to the TypeScript code you want to run in quotations.
 	- For example, (click)="onCreateServer()"
+- To access the event object within your TypeScript code, you can pass in $event to a method you are calling for event binding.
