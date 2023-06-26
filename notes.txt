@@ -19,3 +19,10 @@
 - Each component has it's own HTML, CSS, and JS/TS code. As well as it's own business logic.
 - All other components besides the root component will be added to the HTML of the root component.
 - Generally all of your components will have their own folder with the name of the component.
+- A component by itself is an empty TypeScript class that is updated with an @Component decorator.
+- The decorator gives the TypeScript class component properties.
+- A module in Angular is a bundle of functionality within your application.
+- Similar to a component, a module is a TypeScript class with an @NgModule decorator.
+- The components within the bootstrap array of the module tell Angular which components to look for within the HTML
+- By default, Angular will not scan all of your files, only components described in the declarations array of the module.
+- The imports section of the Module allows you to bring in external modules into your current module
