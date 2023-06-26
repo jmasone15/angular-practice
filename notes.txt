@@ -41,4 +41,6 @@
 - In Angular, square brackets around HTML properties indicate that we want to use Property Binding.
 - The syntax would look something like this: [disabled]="!allowNewServer". "disabled" being the HTML property and "allowNewServer" being the TypeScript class property. The exclamantion point is the not operator.
 - Don't mix String Interpolation and Property Binding! This will break the application.
-
+- To setup event binding, you can add a property to the HTML element you want to bind to. This property should be a common HTML event.
+- The name of the event will be contained with () and set equal to the TypeScript code you want to run in quotations.
+	- For example, (click)="onCreateServer()"
