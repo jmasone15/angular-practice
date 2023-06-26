@@ -31,3 +31,14 @@
 - The selector doesn't have to be used as an HTML element in the HTML file, it can also target elements by property, similar to CSS.
 - Giving the selector property brackets will allow you to target HTML elements with that attribute.
 - You can also select by class ".app-servers".
+- Databinding in its simplest form is communication between your TypeScript code and your HTML Template.
+- To output data from your TypeScript to your template, you can use String Interpolation ({{ data }}) or Property Binding ([property]="data")
+- To input data to your TypeScript from your template you can use Event Binding ((event) = "expression")
+- There is also Two-Way-Binding which handles both inputing and outputing data between TypeScript and Template ([(ngModel)]="data").
+- String Interpolation is dictated in the HTML by using double curly brackets. Within those curly brackets you can add a TypeScript expression that will return a string.
+- Inside the double brackets you can reference properties/methods of the component class.
+- One caveat of String Interpolation is that you cannot write multi-line expressions.
+- In Angular, square brackets around HTML properties indicate that we want to use Property Binding.
+- The syntax would look something like this: [disabled]="!allowNewServer". "disabled" being the HTML property and "allowNewServer" being the TypeScript class property. The exclamantion point is the not operator.
+- Don't mix String Interpolation and Property Binding! This will break the application.
+
