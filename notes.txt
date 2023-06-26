@@ -16,6 +16,18 @@
 - In the module, we tell Angular to bootstrap the AppComponent and parses it into the HTML.
 - In the end, Angular is a JavaScript framework that changes the DOM at runtime.
 - Overall, Angular is component based. You build your application by using multiple components.
-- Each component has it's own HTML, CSS, and JS/TS code. As well as it's own business logic.
+- Each component has its own HTML, CSS, and JS/TS code. As well as its own business logic.
 - All other components besides the root component will be added to the HTML of the root component.
 - Generally all of your components will have their own folder with the name of the component.
+- Each component is an empty TypeScript class that is transformed using the @Component decorator.
+- A module is essentially a collection of Angular components to be rendered. Most of the time having a single module will suffice.
+- To include a component in a module, you must first declare it under the declarations section of the module decorator.
+- After that, you can utilize it in the HTML of the module components.
+- You can create components manually, or with the Angular CLI using the command: 'ng generate component [NAME]'.
+- A component can receive a templateUrl property with a link to the component's target HTML file.
+- ALTERNATIVELY, a component can also receive a template property with a string of HTML (inline template).
+- Similarly, CSS can be given to a component by URL or inline. Only difference is you can give a component multiple stylesheets.
+- The selector of a component must be unique to other HTML elements, Angular components, or third-party components.
+- The selector doesn't have to be used as an HTML element in the HTML file, it can also target elements by property, similar to CSS.
+- Giving the selector property brackets will allow you to target HTML elements with that attribute.
+- You can also select by class ".app-servers".
