@@ -1,0 +1,17 @@
+<div>
+  <button
+    (click)="onButtonClick()"
+    class="btn btn-warning">
+    Display Details
+  </button>
+  <p *ngIf="showPassword; else noPassword">Secret Password = 'tuna'</p>
+  <ng-template #noPassword>
+    <p>It's a secret</p>
+  </ng-template>
+  <p
+    *ngFor="let time of clickTimestamps; let i = index"
+    [ngStyle]="i > 3 ? {backgroundColor: 'blue'} : {}"
+    [ngClass]="{'white-text': i > 3}">
+    Button was clicked at {{ time }}.
+  </p>
+</div>

@@ -47,3 +47,8 @@
 - To access the event object within your TypeScript code, you can pass in $event to a method you are calling for event binding.
 - Two-way-binding is a combination of String Interpolation and Event Binding.
 - By default, a two-way binded value will display the current value from the TypeScript and update it when it is updated by the user.
+- Directives are instructions in the DOM, essentiallys classes that can give the DOM specific directions. Some are built in but you can make custom ones as well.
+- Components are a type of Directive, instructing the DOM to create elements and run TypeScript.
+- The ngIf directive is a structural directive that tells the DOM whether or not to display an element.
+	- All structural directives must be prefaced with a * to tell Angular that the DOM structure 	  is dependent on the directive.
+- The ngIf directive receives a boolean value to determine if the element it is given to is displayed.
