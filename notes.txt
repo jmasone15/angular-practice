@@ -45,3 +45,5 @@
 - The name of the event will be contained with () and set equal to the TypeScript code you want to run in quotations.
 	- For example, (click)="onCreateServer()"
 - To access the event object within your TypeScript code, you can pass in $event to a method you are calling for event binding.
+- Two-way-binding is a combination of String Interpolation and Event Binding.
+- By default, a two-way binded value will display the current value from the TypeScript and update it when it is updated by the user.
