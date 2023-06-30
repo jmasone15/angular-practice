@@ -1,18 +1,25 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
-      <h3>I'm in the App Component!</h3>
-      <hr>
-      <app-servers></app-servers>
-<!--      <div app-servers></div>-->
-<!--      <div class="app-servers"></div>-->
-      <hr>
-      <app-warning-alert></app-warning-alert>
-      <app-success-alert></app-success-alert>
-      <hr>
-      <app-username></app-username>
-      <hr>
-      <app-details></app-details>
+    <div class="col-xs-12 text-center">
+      <h3 class="mb-5">Game!</h3>
+      <app-game-control
+        (gameStarted)="onGameStart($event)">
+      </app-game-control>
     </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <div class="row">
+    <app-number-display
+      class="col-md-6 text-center"
+      [isOdd]="false"
+      [numArray]="evenArray"
+    ></app-number-display>
+    <app-number-display
+      class="col-md-6 text-center"
+      [isOdd]="true"
+      [numArray]="oddArray"
+    ></app-number-display>
   </div>
 </div>
